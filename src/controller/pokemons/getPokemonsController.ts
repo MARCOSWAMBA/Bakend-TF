@@ -1,11 +1,12 @@
-import { Response, Request } from 'express';
-import pokemonData from '../../data/pokemon.json';
+import { Response, Request, NextFunction } from 'express';
+import { getPokemons } from '../../services/pokemon.services';
 
-export async function getPokemonsController(req: Request, res: Response) {
-  const type = req.query.type as string;
-  let pokemons = pokemonData;
-  if (type) {
-    pokemons = pokemonData.filter((pokemon) => pokemon.type.includes(type));
+export async function getPokemonsController(req: Request, res: Response, next: NextFunction) {
+  try {
+    const type = req.query.type as string | undefined;
+    const pokemons = await getPokemons(type);
+    res.status(200).json(pokemons);
+  } catch (error) {
+    next(error);
   }
-  res.status(200).json(pokemons);
 }

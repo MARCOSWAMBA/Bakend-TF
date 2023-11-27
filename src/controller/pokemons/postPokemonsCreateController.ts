@@ -1,14 +1,14 @@
-import { Response, Request } from 'express';
+import { NextFunction, Response, Request, response } from 'express';
+import { IPokemon } from '../../interfaces/IPokemon';
+import { createPokemon } from '../../services/pokemon.services';
 
-export async function postPokemonsCreate(req: Request, res: Response) {
-  const { id, name, type, base_experience } = req.body;
-  if (!id || !name || !type || !base_experience) {
-    res.status(400).json({
-      error: 'BAD_REQUEST',
-      message: `There are missing params for this request`,
-    });
+export async function postPokemonsCreate(req: Request, res: Response, next: NextFunction) {
+  try {
+    const { name, type, base_experience, alias, items } = req.body;
+    const pokemonData: IPokemon = { name, type, base_experience, alias, items };
+    const response = await createPokemon(pokemonData);
+    res.status(200).json(response);
+  } catch (error) {
+    next(error);
   }
-  res.status(200).json({
-    status: 'OK',
-  });
 }
