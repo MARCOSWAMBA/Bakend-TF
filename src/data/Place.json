@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Ingreso",
+    "adress": {
+      "latitude": "-29.409950",
+      "length": "-66.831649",
+      "maps": "https://maps.app.goo.gl/LdBQMtsfs3nEUBpNA"
+    },
+    "description": "Puerta de Ingreso",
+    "img": "-"
+  },
+  {
+    "name": "Biblioteca",
+    "adress": {
+      "latitude": "-29.410008",
+      "length": "-66.831447",
+      "link": "https://maps.app.goo.gl/XfT5hsecEAf4i75f8"
+    },
+    "description": "Biblioteca Dr. Ricardo Mercado Luna",
+    "img": "-"
+  },
+  {
+    "name": "Laboratoio de Ensayos",
+    "adress": {
+      "latitude": "-29.409527",
+      "length": "-66.832461",
+      "link": "https://maps.app.goo.gl/QAaiESj7FZB65ejV7"
+    },
+    "description": "Laboratorios de Ensayos Generales",
+    "img": "-"
+  },
+  {
+    "name": "Cantina",
+    "adress": {
+      "latitude": "-29.409552",
+      "length": "-66.831701",
+      "maps": "https://maps.app.goo.gl/69ziMnbtXrw7a45s9"
+    },
+    "description": "venta de bebidas y snacks",
+    "img": "-"
+  },
+  {
+    "name": "Centro de Estudiantes",
+    "adress": {
+      "latitude": "-29.409568",
+      "length": " -66.831587",
+      "maps": "https://maps.app.goo.gl/KjPFtQLZL4PFoEwXA"
+    },
+    "description": "actividades, informacion y ayuda para el estudiante universitario",
+    "img": "-"
+  },
+  {
+    "name": "Ingenieria Civil",
+    "adress": {
+      "latitude": "-29.409608",
+      "length": "-66.831905",
+      "maps": "https://maps.app.goo.gl/8hXJ3XwVx4RKhCQM7"
+    },
+    "description": "Modulo de Ingenieria Civil",
+    "img": "-"
+  },
+  {
+    "name": "Ingenieria Electro Mecanica",
+    "adress": {
+      "latitude": "-29.409802",
+      "length": " -66.831945",
+      "maps": "https://maps.app.goo.gl/cDGud9xNKiFYG1DG7"
+    },
+    "description": "Modulo de Ingenieria Electro Mecanica",
+    "img": "-"
+  },
+  {
+    "name": "Ingenieria Electronica",
+    "adress": {
+      "latitude": "-29.409762",
+      "length": "-66.831446",
+      "maps": "https://maps.app.goo.gl/dEoRc3smdTuAZ8Aw9"
+    },
+    "description": "Modulo de Ingenieria Electronica",
+    "img": "-"
+  },
+  {
+    "name": "Rectorado",
+    "adress": {
+      "latitude": "-29.409972",
+      "length": "-66.831832",
+      "maps": "https://maps.app.goo.gl/ds5KzitBMSMx8Bc29"
+    },
+    "description": "Modulo de Rectoria",
+    "img": "-"
+  },
+  {
+    "name": "SUM de la UTN",
+    "adress": {
+      "latitude": "-29.409853",
+      "length": "-66.832352",
+      "maps": "https://maps.app.goo.gl/FzYQg8FFRc1HvQjj6"
+    },
+    "description": "Salon de Utilidades Multiples de la UTN",
+    "img": "-"
+  }
+]

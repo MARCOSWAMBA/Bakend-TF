@@ -1,10 +1,8 @@
 import 'dotenv/config';
 import express from 'express';
-import { router as pokemonsRouter } from './router/pokemonsRouter';
-import { router as digimonsRouter } from './router/digimonsRouter';
+import { router as placeRouter } from './router/placeRouter';
 import { logger } from './middleware/loggerMiddleware';
 import { errorHandler } from './middleware/erroHandler';
-import { router as nasaRouter } from './router/nasaRouter';
 import { connect } from './db/mongo';
 
 const app = express();
@@ -15,9 +13,7 @@ connect();
 app.use(express.json());
 app.use('*', logger);
 
-app.use('/pokemons', pokemonsRouter);
-app.use('/digimons', digimonsRouter);
-app.use('/nasa', nasaRouter);
+app.use('/places', placeRouter);
 
 app.use(errorHandler);
 
