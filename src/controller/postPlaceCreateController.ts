@@ -1,6 +1,6 @@
 import { NextFunction, Response, Request, response } from 'express';
-import { IPlace } from '../../interfaces/IPlace';
-import { createPlace } from '../../services/place.services';
+import { IPlace } from '../interfaces/IPlace';
+import { createPlace } from '../services/place.services';
 
 export async function postPlaceCreate(req: Request, res: Response, next: NextFunction) {
   try {

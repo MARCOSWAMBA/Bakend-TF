@@ -1,5 +1,5 @@
 import { Response, Request, NextFunction } from 'express';
-import { getPlaces } from '../../services/place.services';
+import { getPlaces } from '../services/place.services';
 
 export async function getPlaceController(req: Request, res: Response, next: NextFunction) {
   try {
